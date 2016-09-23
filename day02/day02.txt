@@ -1,0 +1,73 @@
+java程序结构
+
+  package demo.day01;//必须是小写字母，多个单词用.隔开
+  import java.util.Scanner //Java API 一定在当前库中存在
+  
+  public class HelloWorld{ //类名每个单词的首字母大写
+	//类体中的成员，要缩进一个tab宽度
+	public static void main(String[] args){
+
+		//方法中的成员也要缩进一个tab宽
+		//java中的语句以;结尾，不是中文的符号
+		//括号要配对使用：先写成对的括号然后在中间填代码
+
+		Scanner console = new Scanner(System.in);
+	}//方法体的结束也要和方法的声明位置对齐
+		
+  }//类体 class body
+ //括号要配对，声明开始的位置和结束的位置要对齐
+
+Eclimps中出现的红色叉：编译错误
+  编译错误：java编译器在将java源代码编译为.class文件的过程中出现的错误，一般是语法错误。
+当出现编译错误的时候是没有.class文件的产生，也就不能运行程序。
+  
+  在控制台执行java程序
+  1.设置CLASSPATH环境变量，指向package所在的目录，
+一般是项目文件夹中的bin目录
+  2.执行java package.ClassName
+
+Linux
+  export/home/soft01/workspace/1304/bin
+  java dat01.HelloWord
+
+  java -cp/home/soft01/workspace/1304/bin dat01.HelloWord   //二合一
+
+Windows
+  set CLASSPATH = E:\workspace\1304\bin
+  java day02.Demo1
+
+  java -cp E:\workspace\1304\bin day02.Demo1
+
+整数类型 ：byte short int long
+  最常用 int 要注意范围，21亿，超范围运算会溢出（结果不可控）
+  其次用long类型
+  很少用short
+  byte用于表示最小数据单位，如文件中的数据
+ 
+浮点数： float double ，IEEE 754 标准
+  float：32位位浮点数
+  double：64位 double float是最常用的浮点数
+  默认的double类型字面量是double类型
+  double后缀D或者d 
+  float后缀是F或者f
+      注意：浮点数有舍入误差，不能进行精确计算。
+ 
+ 字符类型
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
