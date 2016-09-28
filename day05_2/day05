@@ -1,0 +1,13 @@
+方法的定义
+（功能的复用-将算法进行封装）
+public static int max(int x,int y){
+	return x>y?x:y;
+}
+public static void main(String[] args){
+	int z = max(4,6);
+	system.out.print(z);
+}
+
+方法调用：形参 实参
+方法中声明的变量在栈中保存，变量的作用域：方法中定义变量开始到方法结束
+
